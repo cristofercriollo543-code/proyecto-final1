@@ -1,0 +1,324 @@
+/* tipo de letra general facil de leer y bonito */
+body {
+    background-color: #F9F3F9; /* color de fondo general pastel */
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+.encabezado {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(63, 61, 86, 0.08);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.encabezado p {
+    color: #6d597a;
+    font-size: 50px;
+    margin: 0;
+}
+
+.logo img {
+    border-radius: 50%;
+    width: 60px;
+    height: auto;
+    object-fit: contain;
+    margin: 15px;
+}
+.botones {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    display: flex;
+    gap: 40px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    background: transparent;
+    color: #6d6875;
+    cursor: pointer;
+    transition: border-color 0.3s ease, color 0.3s ease;
+    font-size: 15px;
+}
+.boton:hover {
+    border-bottom-color: #9b5de5;
+    color: #9b5de5;
+}
+
+/* centra el contenido general del main y agrega margenes laterales */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* imagen superior estilo banner horizontal con sombra y margenes centrados */
+header img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; 
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+}
+
+/* titulo principal y subtitulo del header centrados */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #6A3968;
+    margin-top: 15px;
+}
+
+
+/* texto de presentacion centrado, con margen y color */
+main > p {
+    text-align: center;
+    font-size: 18px;
+    color: #7B4B79; 
+    font-weight: 600;
+    margin: 20px auto 30px auto;
+}
+
+/* titulos de seccion (h2) centrados, con margen superior e inferior */
+h2 {
+    text-align: center;
+    width: 100%;
+    clear: both;
+    margin: 40px 0 20px 0;
+    color: #5A2E58;
+}
+
+/* configuracion general de las tablas */
+table, th, td {
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* contenedor en cuadricula responsivo para 4 columnas */
+.fila-tablas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+/* estilo base para cada tabla con esquinas redondeadas y margenes */
+.tabla-producto {
+    width: 100%;
+    border-radius: 12px;        
+    overflow: hidden;           
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    border: 1px solid;
+    margin: 0 auto;
+}
+
+/* efecto cuando pasas el mouse por encima de la tabla */
+.tabla-producto:hover {
+    transform: translateY(-3px); 
+}
+
+/* ================================================= */
+/* estetica para productos escolares (tonos rosados pasteles) */
+/* ================================================= */
+.tabla-escolar {
+    background-color: #FFF0FC; 
+    border-color: #D8A4D5;
+}
+
+.tabla-escolar:hover {
+    background-color: #FFE1FA; 
+}
+
+.tabla-escolar th {
+    background-color: #E8B4E4; 
+    color: #3B1C39;
+    font-size: 16px;
+}
+
+.tabla-escolar td {
+    border-bottom: 1px solid #D8A4D5;
+    color: #4A2E49;
+}
+
+/* ================================================= */
+/* estetica para productos electronicos y novedades (tonos amarillos y naranjas pasteles) */
+/* ================================================= */
+.tabla-electronica {
+    background-color: #FEFCE8; /* amarillo pastel muy suave */
+    border-color: #FDE047;     /* borde amarillo/naranja pastel */
+}
+
+.tabla-electronica:hover {
+    background-color: #FEF9C3; /* cambia de tono al pasar el mouse */
+}
+
+.tabla-electronica th {
+    background-color: #FEF08A; /* tono mas fuerte para el encabezado */
+    color: #713F12;
+    font-size: 16px;
+}
+
+.tabla-electronica td {
+    border-bottom: 1px solid #FDE047;
+    color: #713F12;
+}
+
+/* asegura que las imagenes de las tablas normales tengan buen tamaño y esquinas suaves */
+.tabla-producto img {
+    max-width: 100%;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+/* linea divisoria interna */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #D8A4D5;
+    margin: 10px 0;
+}
+
+/* ================================================= */
+/* estetica para la seccion de servicios (3 columnas, tonos verdes pasteles) */
+/* ================================================= */
+.fila-3-tablas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.tabla-servicio {
+    background-color: #F0FDF4; 
+    border-color: #86EFAC;     
+}
+
+.tabla-servicio:hover {
+    background-color: #DCFCE7; 
+}
+
+.tabla-servicio th {
+    background-color: #BBF7D0; 
+    color: #14532D;
+    font-size: 16px;
+}
+
+.tabla-servicio td {
+    border-bottom: 1px solid #86EFAC;
+    color: #166534;
+    padding: 10px;
+    vertical-align: middle; 
+}
+
+/* imagen grande para la seccion de servicios en dos columnas */
+.tabla-servicio img {
+    width: 120px;  
+    height: 120px; 
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+}
+
+.piedepagina {
+
+    width: 100%;
+    min-height: 80px;
+    background-color: #ffffff;
+    box-shadow: 0 -2px 10px rgba(63, 61, 86, 0.08);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+
+.piedepagina .nombre {
+    color: #6d597a;
+    font-size: 18px;
+    margin: 0 auto 0 0;
+    white-space: nowrap;
+}
+
+.derechos {
+    flex: 1;
+    text-align: center;
+}
+
+.derechos p {
+    color: #6d6875;
+    font-size: 12px;
+    margin: 0;
+}
+
+
+.logo2 img {
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+.botones2 {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    flex-shrink: 0;
+}
+
+.boton3 {
+    padding: 5px 15px;
+    text-decoration: none;
+    color: #6d6875;
+    font-size: 13px;
+    white-space: nowrap;
+    border-radius: 0;
+    border-right: 1px solid #d8cce5;
+    transition: color 0.3s ease;
+}
+.boton3:hover {
+   border-bottom-color: #9b5de5;
+    color: #9b5de5;
+}
+
+.boton3:last-child {
+    border-right: none;
+}
+
+
+
+
+/* ================================================= */
+/* adaptacion para dispositivos moviles o pantallas pequeñas (@media) */
+/* ================================================= */
+@media (max-width: 768px) {
+    .fila-3-tablas {
+        grid-template-columns: 1fr; /* pasa de 3 columnas a 1 sola columna en celulares */
+    }
+}
