@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Papelería Express</title>
+    <link rel="stylesheet" href="estilo.css/style.css">
+</head>
+<body>
+
+    <header class="encabezado1">
+
+           <div class="logo">
+                <img src="../papeleria/img/logo.jpg" alt="logo">
+            </div>
+            <p>Papeleria Express</p>
+
+            <div class="botones1">
+              <a href="../papeleria/index.html">
+                <button class="boton">Inicio</button>
+              </a>
+
+              <a href="../Papeleria_Express_www/index.html">
+                <button class="boton">Productos</button>
+              </a>
+
+              <a href="../contactoPapeleria/index.html">
+                <button class="boton">Contactos</button>
+              </a>
+              
+            </div>
+        </header>
+
+    <header class="encabezado">
+        <h1>Ponte en Contacto con Nosotros</h1>
+        <p>
+            ¿Tienes dudas sobre nuestros productos, servicios o deseas
+            consultar un pedido especial?
+            <br>
+            Escríbenos o visítanos.
+        </p>
+    </header>
+
+    <main class="contenedor">
+
+        <section class="formulario">
+            <h2>Realizar un Pedido / Cotización</h2>
+            <hr>
+
+            <form id="formPedido">
+
+                <div class="fila">
+                    <div class="campo">
+                        <label for="nombre">Nombre Completo *</label>
+                        <input type="text" id="nombre" name="nombre"
+                               required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="telefono">Teléfono / WhatsApp *</label>
+                        <input type="tel" id="telefono" name="telefono"
+                               required>
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label for="correo">Correo Electrónico *</label>
+                    <input type="email" id="correo" name="correo"
+                           required>
+                </div>
+
+                <div class="campo">
+                    <label for="tipo">Tipo de Servicio o Pedido *</label>
+                    <select id="tipo" name="tipo" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="Cotización">
+                            Cotización
+                        </option>
+                        <option value="productos escolar">
+                            Productos escolar
+                        </option>
+                        <option value="productos electronicos">
+                          Productos electronicos
+                        </option>
+                        <option value="novedades y regalos">
+                            Novedades y regalos
+                        </option>
+                        <option value="servicios adicionales">
+                            Servicios adicionales
+                        </option>
+                        
+                        
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="detalles">
+                        Detalles del Pedido o Lista de Productos *
+                    </label>
+                    <textarea id="detalles" name="detalles"
+                              rows="5" required></textarea>
+                </div>
+
+                <hr>
+
+                <button type="submit">Enviar Pedido</button>
+
+            </form>
+
+            <!-- Aquí aparecerá la información del formulario -->
+            <section id="resultado" class="resultado">
+                <p class="mensaje"></p>
+
+                <div class="dato">
+                    <span id="verNombre"></span>
+                </div>
+
+                <div class="dato">
+                    
+                    <span id="verTelefono"></span>
+                </div>
+
+                <div class="dato">
+                    <span id="verCorreo"></span>
+                </div>
+
+                <div class="dato">
+                    <span id="verTipo"></span>
+                </div>
+
+                <div class="dato">
+                    <p id="verDetalles"></p>
+                </div>
+            </section>
+
+        </section>
+
+        <aside class="lateral">
+
+            <section class="tarjeta">
+               <p><strong>Dirección:</strong></p>
+               <p>
+                <a href="https://maps.app.goo.gl/6dMvjLKgTfYSiuS88" target="_blank" rel="noopener noreferrer">
+                  Av. Islas Malvinas S48f E5D
+                </a>
+              </p>
+                
+                <p class="subtitulo"><strong>Horarios de Atención:</strong></p>
+                <p>Lunes a Viernes: 8:00 am - 9:30 pm</p>
+                <p>Sábados y Domingos: 10:00 am - 8:00 pm</p>
+                <p>Feriados: 10:00 am - 8:00 pm</p>
+            </section>
+
+            <section class="tarjeta">
+                <h2>Contactos</h2>
+
+                <p><strong>WhatsApp:</strong></p>
+                <p>
+                    <a href="https://wa.me/5930993290850">
+                        +593 0993290850
+                    </a>
+                </p>
+                <p class="nota">
+                    Respuesta rápida para envío de archivos y cotizaciones.
+                </p>
+
+                <p class="subtitulo"><strong>Correo Electrónico:</strong></p>
+                <p>
+                    <a href="mailto:danielafer24@gmail.com">
+                        danielafer24@gmail.com
+                    </a>
+                </p>
+
+                <p class="subtitulo"><strong>TikTok:</strong></p>
+                <p>
+                    <a href="https://www.tiktok.com/@papeleriaexpress14"
+                       target="_blank" rel="noopener noreferrer">
+                        @papeleriaexpress14
+                    </a>
+                </p>
+                <p>¡Síguenos para ver novedades y ofertas!</p>
+            </section>
+        </aside>
+    </main>
+
+     <footer class="piedepagina">
+
+           <div class="logo2">
+              <img src="../papeleria/img/logo.jpg" alt="logo2">
+            </div>
+
+            <p class="nombre">Papeleria Express</p>
+
+            <div class="derechos">
+              <p>© 2024 Papeleria Express. Todos los derechos reservados.</p>
+            </div>
+
+            <div class="botones3">
+
+               <a class="boton4" href="../papeleria/index.html">Inicio</a>
+               <a class="boton4" href="../Papeleria_Express_www/index.html">Productos</a>
+               <a class="boton4" href="../contactoPapeleria/index.html">Contactos</a>
+              
+            </div>
+          </footer>
+
+    <script src="javaScript/java.js"></script>
+</body>
+</html>

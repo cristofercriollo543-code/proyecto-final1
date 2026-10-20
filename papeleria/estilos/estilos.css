@@ -1,9 +1,10 @@
 
 
 body {
-    margin: 15px;
-    padding-top: 70px;
-    background-color:  #fff8fa;
+    margin: 0;
+    padding: 85px 15px 0;
+    background-color: #fff8fa;
+    font-family: "Times New Roman", Times, serif;
 }
 
 .encabezado {
@@ -11,6 +12,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    box-sizing: border-box;
     height: 70px;
     background-color: #ffffff;
     box-shadow: 0 2px 10px rgba(63, 61, 86, 0.08);
@@ -43,6 +45,7 @@ body {
 
 button {
     padding: 10px 15px;
+    font-family: inherit;
     border: none;
     border-bottom: 2px solid transparent;
     background: transparent;
@@ -260,16 +263,15 @@ h2 {
 
 .piedepagina {
 
-    width: 100%;
+    width: calc(100% + 30px);
+    margin-left: -15px;
     min-height: 80px;
     background-color: #ffffff;
     box-shadow: 0 -2px 10px rgba(63, 61, 86, 0.08);
-
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-
     padding: 10px 15px;
     box-sizing: border-box;
 }
@@ -327,4 +329,177 @@ h2 {
     border-right: none;
 }
 
+.piedepagina {
+    margin-top: 35px;
+}
 
+@media (max-width: 900px) {
+    .encabezado p {
+        font-size: 30px;
+    }
+
+    .logo img {
+        width: 48px;
+        margin: 10px;
+    }
+
+    .botones {
+        top: 26px;
+        gap: 8px;
+    }
+
+    .botones button {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .contenido {
+        padding: 25px;
+    }
+
+    .espacio-categorias {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+
+    .datosprincipal {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .contenidod {
+        flex-basis: 100%;
+    }
+
+    .imagenp,
+    .datosprincipal2 {
+        flex: 1 1 calc(50% - 8px);
+        transform: none;
+    }
+
+    .imagenp img {
+        width: 100%;
+        height: 240px;
+        transform: none;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        padding: 120px 10px 0;
+    }
+
+    .encabezado {
+        height: auto;
+        min-height: 108px;
+        padding: 6px 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .encabezado p {
+        font-size: 22px;
+    }
+
+    .logo img {
+        width: 40px;
+        margin: 4px 8px 4px 0;
+    }
+
+    .botones {
+        position: static;
+        width: 100%;
+        justify-content: center;
+        gap: 4px;
+    }
+
+    .botones button {
+        padding: 7px 10px;
+        font-size: 12px;
+    }
+
+    .segundomodulo {
+        flex-direction: column;
+    }
+
+    .contenido {
+        width: 100%;
+        padding: 24px 18px;
+    }
+
+    .imagen {
+        width: 100%;
+    }
+
+    .imagen img {
+        height: 220px;
+    }
+
+    .categorias {
+        padding: 20px 5px;
+    }
+
+    .espacio-categorias {
+        gap: 16px;
+    }
+
+    .categoria img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .datosprincipal {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 16px;
+    }
+
+    .contenidod,
+    .imagenp,
+    .datosprincipal2 {
+        width: 100%;
+        flex: auto;
+        padding: 10px;
+        transform: none;
+    }
+
+    .imagenp img {
+        width: 100%;
+        height: 220px;
+    }
+
+    .piedepagina {
+        width: calc(100% + 20px);
+        margin-left: -10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 10px;
+    }
+
+    .piedepagina .nombre {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .derechos {
+        flex-basis: 100%;
+        order: 3;
+    }
+
+    .botones2 {
+        flex-basis: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 380px) {
+    .encabezado p {
+        font-size: 19px;
+    }
+
+    .espacio-categorias {
+        grid-template-columns: 1fr;
+    }
+}
