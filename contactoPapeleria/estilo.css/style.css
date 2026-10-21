@@ -1,9 +1,10 @@
 
-/* Configuración general */
+/* Configuración general del diseño */
 * {
     box-sizing: border-box;
 }
 
+/* Encabezado, logotipo y navegación principal */
 .encabezado1 {
     position: fixed;
     top: 0;
@@ -62,6 +63,7 @@
     color: #9b5de5;
 }
 
+/* Fondo y dimensiones generales de la página */
 body {
     margin: 0px;
     padding-top: 0px;
@@ -69,7 +71,7 @@ body {
     width: 100%;
 }
 
-/* Encabezado */
+/* Título y texto introductorio de contacto */
 .encabezado {
     margin-top: 100px;
     text-align: center;
@@ -87,7 +89,7 @@ body {
     font-size: 12px;
 }
 
-/* Contenedor principal */
+/* Distribución de las columnas principales */
 .contenedor {
     max-width: 876px;
     margin: 0 auto 50px;
@@ -97,7 +99,7 @@ body {
     align-items: start;
 }
 
-/* Formulario */
+/* Formulario, campos y estados de interacción */
 .formulario {
     background-color: white;
     border: 1px solid #26364c;
@@ -165,7 +167,7 @@ textarea:focus {
     border-color: #e7a1fa;
 }
 
-/* Botón */
+/* Botón para enviar la solicitud */
 .formulario button {
     width: 100%;
     padding: 11px;
@@ -184,7 +186,7 @@ textarea:focus {
     background-color: #fbb5ff;
 }
 
-/* Información lateral */
+/* Tarjetas con ubicación, horarios y medios de contacto */
 .lateral {
     display: flex;
     flex-direction: column;
@@ -221,7 +223,7 @@ textarea:focus {
     font-size: 10px;
 }
 
-/* Enlaces */
+/* Estilo común de los enlaces */
 a {
     color: #2860e8;
     font-weight: bold;
@@ -232,7 +234,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Resumen del pedido */
+/* Área donde se presenta el resumen del pedido */
 .resultado {
     margin-top: 25px;
     padding: 20px;
@@ -268,6 +270,7 @@ a:hover {
     margin: 5px 0;
 }
 
+/* Pie de página y navegación secundaria */
 .piedepagina {
 
     width: 100%;
@@ -348,6 +351,7 @@ a:hover {
     border-right: none;
 }
 
+/* Ajustes de navegación para tabletas */
 @media (max-width: 850px) {
     .encabezado1 p {
         font-size: 28px;
@@ -368,7 +372,7 @@ a:hover {
     }
 }
 
-/* Adaptación para celulares */
+/* Adaptación del formulario y pie de página para celulares */
 @media (max-width: 650px) {
     body {
         padding: 20px 14px;

@@ -1,5 +1,6 @@
 
 
+/* Estilos base de la página y tipografía */
 body {
     margin: 0;
     padding: 85px 15px 0;
@@ -7,6 +8,7 @@ body {
     font-family: "Times New Roman", Times, serif;
 }
 
+/* Barra superior, logotipo y navegación principal */
 .encabezado {
     position: fixed;
     top: 0;
@@ -59,6 +61,7 @@ button {
     color: #9b5de5;
 }
 
+/* Sección de bienvenida y llamada a la acción */
 .segundomodulo {
     display: flex;
     align-items: center;
@@ -123,6 +126,7 @@ h1 {
     display: block;
 }
 
+/* Cuadrícula de categorías del catálogo */
 .categorias {
     max-width: 1400px;
     margin: auto;
@@ -171,6 +175,7 @@ h2 {
     color: #9B5DE5;
 }
 
+/* Presentación del negocio y datos de contacto */
 .datosprincipal {
     display: flex;
     align-items: center;
@@ -261,6 +266,7 @@ h2 {
     margin: 0 0 8px;
 }
 
+/* Pie de página y enlaces secundarios */
 .piedepagina {
 
     width: calc(100% + 30px);
@@ -333,6 +339,7 @@ h2 {
     margin-top: 35px;
 }
 
+/* Ajustes de diseño para tabletas */
 @media (max-width: 900px) {
     .encabezado p {
         font-size: 30px;
@@ -384,6 +391,7 @@ h2 {
     }
 }
 
+/* Ajustes de diseño para teléfonos */
 @media (max-width: 650px) {
     body {
         padding: 120px 10px 0;

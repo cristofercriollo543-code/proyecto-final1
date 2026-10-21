@@ -1,3 +1,4 @@
+/* Reglas generales y estilo base del sitio */
 * {
     box-sizing: border-box;
 }
@@ -10,6 +11,7 @@ body {
     padding: 0;
 }
 
+/* Encabezado y navegación principal */
 .encabezado {
     position: fixed;
     top: 0;
@@ -62,14 +64,14 @@ button {
     color: #9b5de5;
 }
 
-/* centra el contenido general del main y agrega margenes laterales */
+/* Ancho del contenido y presentación del catálogo */
 main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* imagen superior estilo banner horizontal con sombra y margenes centrados */
+/* Imagen de portada del catálogo */
 header img {
     width: 100%;
     height: 250px;
@@ -90,7 +92,7 @@ header h1 {
 }
 
 
-/* texto de presentacion centrado, con margen y color */
+/* Texto introductorio */
 main > p {
     text-align: center;
     font-size: 18px;
@@ -108,7 +110,7 @@ h2 {
     color: #5A2E58;
 }
 
-/* configuracion general de las tablas */
+/* Estructura compartida por las tarjetas de productos */
 table, th, td {
     border-collapse: collapse;
 }
@@ -118,7 +120,7 @@ th, td {
     text-align: center;
 }
 
-/* contenedor en cuadricula responsivo para 4 columnas */
+/* Cuadrícula de productos */
 .fila-tablas {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -142,9 +144,7 @@ th, td {
     transform: translateY(-3px); 
 }
 
-/* ================================================= */
-/* estetica para productos escolares (tonos rosados pasteles) */
-/* ================================================= */
+/* Estilo de las tarjetas de productos escolares */
 .tabla-escolar {
     background-color: #FFF0FC; 
     border-color: #D8A4D5;
@@ -165,9 +165,7 @@ th, td {
     color: #4A2E49;
 }
 
-/* ================================================= */
-/* estetica para productos electronicos y novedades (tonos amarillos y naranjas pasteles) */
-/* ================================================= */
+/* Estilo de las tarjetas de productos electrónicos y novedades */
 .tabla-electronica {
     background-color: #FEFCE8; /* amarillo pastel muy suave */
     border-color: #FDE047;     /* borde amarillo/naranja pastel */
@@ -206,9 +204,7 @@ hr {
     margin: 10px 0;
 }
 
-/* ================================================= */
-/* estetica para la seccion de servicios (3 columnas, tonos verdes pasteles) */
-/* ================================================= */
+/* Estilo de los servicios adicionales */
 .fila-3-tablas {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
@@ -248,6 +244,7 @@ hr {
     margin: 0 auto;
 }
 
+/* Pie de página y navegación secundaria */
 .piedepagina {
 
     width: 100%;
@@ -318,9 +315,7 @@ hr {
     border-right: none;
 }
 
-
-
-
+/* Adaptación para tabletas */
 @media (max-width: 900px) {
     .encabezado p {
         font-size: 30px;
@@ -354,6 +349,7 @@ hr {
     }
 }
 
+/* Adaptación para teléfonos */
 @media (max-width: 600px) {
     .encabezado {
         height: auto;
@@ -439,6 +435,7 @@ hr {
     }
 }
 
+/* Ajustes para pantallas muy estrechas */
 @media (max-width: 380px) {
     main {
         padding-right: 8px;
